@@ -1,17 +1,19 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-const User = () => {
+const User = (props) => {
 
-      const[user, setUsers] = useState([])
+    const[users, setUsers] = useState([])
     useEffect(()=>{
-        fetch('https://randomuser.me/api/?results=50')
+        fetch('https://raw.githubusercontent.com/mir-hussain/guns/main/data.json')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setUsers(data))
     }, [])
     return (
         <div>
-            
+            {
+              users.map((user)=> <li>{user.action}</li>)
+            }
         </div>
     );
 };

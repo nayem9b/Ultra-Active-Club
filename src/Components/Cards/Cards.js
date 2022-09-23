@@ -21,8 +21,8 @@ const Cards = ({image}) => {
     <p>If a dog chews shoes whose shoes does he choose?</p>
     <div className="card-actions justify-end">
     {
-        tags.map(tag =>(
-              <div key={image.id} className="badge badge-outline">#{tag}</div> 
+        tags.map((tag,index) =>(
+              <div key={index} className="badge badge-outline">#{tag}</div> 
         ))
     }
     </div>

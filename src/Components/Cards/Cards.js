@@ -15,10 +15,10 @@ const Cards = ({image}) => {
    <img src={image.userImageURL} alt="" />
   </div>
 </div>
-    <p> <span className='text-violet-600'> Views:</span> {image.views}</p>
+    <p> <span className='text-violet-500'> Views:</span> {image.views}</p>
     <p> <span className='text-fuchsia-500'> Likes:</span> {image.likes}</p>
-    <p> <span className='text-violet-600'> Comments:</span> {image.comments}</p>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <p> <span className='text-purple-400'> Comments:</span> {image.comments}</p>
+  
     <div className="card-actions justify-end">
     {
         tags.map((tag,index) =>(

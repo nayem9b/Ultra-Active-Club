@@ -1,10 +1,14 @@
 import React from "react";
 
-const Cards = ({ image }) => {
+const Cards = ({ image , setCount ,count }) => {
   const tags = image.tags.split(",");
+  const clicked =()=>{
+    setCount(count+30)
+  }
+
   return (
     <div>
-      <div className='card w-96 bg-base-100 shadow-xl my-10'>
+      <div className='card w-80 bg-base-100 shadow-xl my-10'>
         <figure>
           <img src={image.webformatURL} alt='Shoes' />
         </figure>
@@ -18,6 +22,7 @@ const Cards = ({ image }) => {
             {" "}
             <span className='text-fuchsia-500'> For Age</span> {image.forAge}
           </p>
+         
             <p>
             {" "}
             <span className='text-purple-400'></span> {image.motivation}
@@ -26,7 +31,7 @@ const Cards = ({ image }) => {
 
           
 
-          <button className='btn gap-2'>
+          <button className='btn gap-2' onClick={clicked} > 
             Add to List
             <svg
               xmlns='http://www.w3.org/2000/svg'

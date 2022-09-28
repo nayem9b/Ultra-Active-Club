@@ -1,7 +1,10 @@
 import React from "react";
 import "./MyInfo.css";
 
-const MyInfo = () => {
+const MyInfo = ({setCount ,count }) => {
+     const clicked =()=>{
+    setCount(count+30)
+  }
   return (
     <div>
       <div>
@@ -77,7 +80,7 @@ const MyInfo = () => {
         <div className='grid grid-cols-3 justify-evenly bg-slate-600 p-4 m-6 rounded-2xl'>
             <h1 className="text-xl">Break Time</h1> 
             <div className="flex">
-                <h1 className="mx-2"> 0 </h1>
+                <h1 className="mx-2" onClick={clicked} > {count}</h1>
             <h1> Minutes</h1>
            </div>
             

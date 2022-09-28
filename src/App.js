@@ -13,7 +13,7 @@ import ExerciseDetails from "./Components/ExerciseDetails/ExerciseDetails";
 function App(props) {
   const [images, setImages] = useState([]);
   const [count, setCount] = useState(0);
-  const [rest, setRest] = useState(1);
+  const [rest, setRest] = useState(0);
 
   useEffect(() => {
     fetch("tree.json")
@@ -39,14 +39,15 @@ function App(props) {
           ))}
         </div>
       </div>
-      <div>
+      <div className="sticky">
         <MyInfo setCount={setCount} count={count}></MyInfo>
         <AddBreak
           setCount={setCount}
           count={count}
           rest={rest}
           setRest={setRest}></AddBreak>
-        <ExerciseDetails setCount={setCount} count={count}></ExerciseDetails>
+        <ExerciseDetails setCount={setCount} count={count}  rest={rest}
+          setRest={setRest}></ExerciseDetails>
         <Button></Button>
       </div>
       </div>

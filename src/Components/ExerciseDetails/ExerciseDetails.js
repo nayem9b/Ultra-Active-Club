@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ExerciseDetails = ({setCount ,count,setRest ,rest}) => {
-    const clicked =()=>{
-    setCount(count+30)
-  }
+const ExerciseDetails = ({setCount ,count,setRest ,rest,clicked,updateButton}) => {
+//     const clicked =()=>{
+//     setCount(count+30)
+//   }
   
     return (
         <div>
@@ -13,15 +13,14 @@ const ExerciseDetails = ({setCount ,count,setRest ,rest}) => {
         <div className='grid grid-cols-3 justify-evenly bg-slate-600 p-4 m-6 rounded-2xl'>
             <h1 className="text-xl">Exercise Time</h1> 
             <div className="flex">
-                <h1 className="mx-2"> 0 </h1>
-            <h1> Minutes</h1>
+            <h1 className="mx-2"> {rest} Minutes</h1>
            </div>
             
             </div>
         <div className='grid grid-cols-3 justify-evenly bg-slate-600 p-4 m-6 rounded-2xl'>
             <h1 className="text-xl">Break Time</h1> 
             <div className="flex">
-                <h1 className="mx-2" onClick={clicked} > {count}</h1>
+                <h1 className="mx-2"  > {count}</h1>
             <h1  > Minutes</h1>
            </div>
             

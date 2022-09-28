@@ -1,6 +1,8 @@
 import React from "react";
 import "./MyInfo.css";
 import pic from "./IMG_20211022_174133.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot} from '@fortawesome/free-solid-svg-icons'
 
 const MyInfo = () => {
   return (
@@ -15,7 +17,11 @@ const MyInfo = () => {
         </div>
         <div className="ml-4">
           <h1 className=' text-3xl '>MD RAZWAN NIAM</h1>
-          <h2 className=' text-xl'>Dinajpur, Bangladesh</h2>
+          <div className="flex">
+             <FontAwesomeIcon className="mt-2" icon={faLocationDot} />
+          <h2 className=' text-xl ml-4'>Dinajpur, Bangladesh</h2>
+          </div>
+        
         </div>
       </div>
 

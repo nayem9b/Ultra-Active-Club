@@ -1,10 +1,13 @@
 import React from 'react'
 import pic from "./IMG_20211022_174133.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPersonWalking} from '@fortawesome/free-solid-svg-icons'
 const Navbar = () => {
   return (
     <div>
       <div className="navbar bg-base-100 shadow-lg lg:px-40">
         <div className="flex-1">
+   <FontAwesomeIcon icon={faPersonWalking} />
           <a className="btn btn-ghost normal-case text-xl">Exercise-Log</a>
         </div>
 

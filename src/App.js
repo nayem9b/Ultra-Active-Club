@@ -7,6 +7,7 @@ import Cards from './Components/Cards/Cards';
 import Navbar from './Components/Navbar/Navbar';
 import ImageSearch from './Components/ImageSearch/ImageSearch';
 import Footer from './Components/Footer/Footer';
+import Userprofile from './Components/User-Profile/Userprofile';
 
 
 
@@ -17,7 +18,7 @@ function App() {
   const[ term, setTerm]= useState('')
 
    useEffect(()=>{
-    fetch(`https://pixabay.com/api/?key=30122663-8b50b24bc7bd52e576cb2d22f&q=${term}&image_type=photo&pretty=true`)
+    fetch('tree.json')
     .then( res => res.json())
     .then(data => {
       setImages(data.hits);
@@ -31,6 +32,7 @@ function App() {
     <div className="App">
           <Navbar></Navbar>
           <ImageSearch searchText={(text) => setTerm(text)}></ImageSearch>
+         
          
       <div className='container'>
         

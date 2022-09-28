@@ -8,6 +8,7 @@ import ImageSearch from './Components/ImageSearch/ImageSearch'
 import Footer from './Components/Footer/Footer'
 import Userprofile from './Components/User-Profile/Userprofile'
 import MyInfo from './Components/My Info/MyInfo'
+import Button from './Components/Button/Button'
 
 function App() {
   const [images, setImages] = useState([])
@@ -39,6 +40,7 @@ function App() {
     
       </div>
         <MyInfo></MyInfo>
+       <Button></Button>
       <Footer></Footer>
     </div>
   )

@@ -8,7 +8,7 @@ const Userprofile = () => {
 <div data-popover="" id="popover-user-profile" role="tooltip" className="inline-block absolute invisible z-10 w-64 text-sm font-light text-gray-500 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 transition-opacity duration-300 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 1014.4px, 0px);" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom">
     <div className="p-3">
         <div className="flex justify-between items-center mb-2">
-            <a href="https://www.google.com/">
+            <a href="#">
                 <img className="w-10 h-10 rounded-full" src="/docs/images/people/profile-picture-1.jpg" alt="Jese Leos"/>
             </a>
             <div>

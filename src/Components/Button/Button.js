@@ -8,7 +8,7 @@ const Button = () => {
   };
   return (
     <div>
-      <button onClick={handleBookmark} className='btn btn-primary'>
+      <button onClick={handleBookmark} className='btn btn-primary ml-6'>
         Activity Completed
       </button>
     </div>

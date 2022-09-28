@@ -9,12 +9,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex">
-          <div className="indicator">
-            <span className="indicator-item badge badge-secondary mr-4">
-              9+
-            </span>
-            <button className="btn mr-4">inbox</button>
-          </div>
+          
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">

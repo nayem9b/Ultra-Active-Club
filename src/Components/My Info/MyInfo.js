@@ -25,7 +25,7 @@ const MyInfo = () => {
         </div>
       </div>
 
-      <div className='grid grid-cols-3 justify-evenly bg-slate-600 p-4 m-6 rounded-2xl'>
+      <div className='grid grid-cols-3 justify-evenly bg-slate-500 p-4 m-6 rounded-2xl'>
         <div>
           <div className='flex'>
             <h1 className='text-2xl'> 65</h1>

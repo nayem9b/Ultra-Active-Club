@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="navbar bg-base-100 shadow-lg lg:px-40">
         <div className="flex-1">
    <FontAwesomeIcon icon={faPersonWalking} />
-          <a className="btn btn-ghost normal-case text-xl">Exercise-Log</a>
+          <a className="btn btn-ghost normal-case text-xl">My-Exercise-Log</a>
         </div>
 
         <div className="flex">

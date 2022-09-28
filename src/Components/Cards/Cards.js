@@ -8,7 +8,7 @@ const Cards = ({ image , setCount ,count }) => {
 
   return (
     <div>
-      <div className='card w-80 bg-base-100 shadow-xl my-10'>
+      <div className='card w-70 bg-base-100 shadow-xl my-10'>
         <figure>
           <img src={image.webformatURL} alt='Shoes' />
         </figure>
@@ -20,7 +20,7 @@ const Cards = ({ image , setCount ,count }) => {
           </p>
           <p>
             {" "}
-            <span className='text-fuchsia-500'> For Age</span> {image.forAge}
+            <span className='text-fuchsia-500'> For Age:</span> {image.forAge}
           </p>
          
             <p>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import pic from "./IMG_20211022_174133.jpg";
 const Navbar = () => {
   return (
     <div>
@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
               <div className="w-10 rounded-full">
-                <img src="https://placeimg.com/80/80/people" />
+                <img src={pic} />
               </div>
             </label>
             <ul

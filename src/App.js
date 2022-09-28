@@ -27,9 +27,9 @@ function App(props) {
   return (
     <div className='App'>
       <Navbar></Navbar>
-<div className="container flex">
-      <div className='flex sm:block w-5/6'>
-        <div className='grid sm:grid-cols-3 lg:grid-cols-3 md:grid-cols-2  gap-0'>
+<div className="container lg:flex md:block sm:block">
+      <div className='sm:w-screen lg:w-fit md:w-screen'>
+        <div className='grid sm:grid-cols-1 lg:grid-cols-3 md:grid-cols-2  gap-0'>
           {images.map((image) => (
             <Cards
               key={image.id}
@@ -39,7 +39,7 @@ function App(props) {
           ))}
         </div>
       </div>
-      <div className="sticky">
+      <div className="">
         <MyInfo setCount={setCount} count={count}></MyInfo>
         <AddBreak
           setCount={setCount}

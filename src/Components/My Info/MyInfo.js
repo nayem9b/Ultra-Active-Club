@@ -1,20 +1,24 @@
 import React from "react";
 import "./MyInfo.css";
-import pic from "./IMG_20211022_174133.jpg"
+import pic from "./IMG_20211022_174133.jpg";
 
 const MyInfo = () => {
   return (
     <div className='ml-6'>
-      <div>
-        <div className='avatar'>
-          <div className='w-24 rounded-full'>
-            <img src={pic} />
+      <div className='flex'>
+        <div>
+          <div className='avatar'>
+            <div className='w-24 rounded-full'>
+              <img src={pic} />
+            </div>
           </div>
         </div>
-        <h1 className=' text-3xl '>MD RAZWAN NIAM</h1>
+        <div className="ml-4">
+          <h1 className=' text-3xl '>MD RAZWAN NIAM</h1>
+          <h2 className=' text-xl'>Dinajpur, Bangladesh</h2>
+        </div>
       </div>
 
-      <h2 className=' text-xl'>Dinajpur, Bangladesh</h2>
       <div className='grid grid-cols-3 justify-evenly bg-slate-600 p-4 m-6 rounded-2xl'>
         <div>
           <div className='flex'>

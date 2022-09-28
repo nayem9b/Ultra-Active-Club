@@ -10,17 +10,17 @@ const Cards = ({ image }) => {
         </figure>
         <div className='card-body'>
           <h3 className='card-title'>{image.user}</h3>
-          <div className='avatar'>
-            <div className='w-9 rounded-full'>
-              <img src={image.userImageURL} alt='' />
-            </div>
-          </div>     <p>
+            <p>
             {" "}
             <span className='text-violet-500'> Time Required:</span> {image.timeRequired}
           </p>
           <p>
             {" "}
             <span className='text-fuchsia-500'> For Age</span> {image.forAge}
+          </p>
+            <p>
+            {" "}
+            <span className='text-purple-400'></span> {image.motivation}
           </p>
         
 

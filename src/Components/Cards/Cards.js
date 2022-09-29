@@ -10,7 +10,7 @@ const Cards = ({ image, setCount, count }) => {
     <div>
       <div className="card w-70 bg-base-100 shadow-xl my-10">
         <figure>
-          <img src={image.webformatURL} alt="Loading" />
+          <img src={image.previewURL} alt="Loading" />
         </figure>
         <div className="card-body">
           <h3 className="card-title font-bold text-3xl">{image.user}</h3>

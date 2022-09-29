@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 
 const Button = () => {
   const handleBookmark = () => {
-    Swal.fire("Good job!", "You Finished Your Exercise!", "success");
+    Swal.fire("Good job!", "You Have Finished Your Exercise!", "success");
   };
   return (
     <div>

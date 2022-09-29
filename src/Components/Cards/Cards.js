@@ -13,18 +13,18 @@ const Cards = ({ image , setCount ,count }) => {
           <img src={image.webformatURL} alt='Shoes' />
         </figure>
         <div className='card-body'>
-          <h3 className='card-title  text-2xl'>{image.user}</h3>
+          <h3 className='card-title font-bold text-3xl'>{image.user}</h3>
            <p>
             {" "}
             <span className=""></span> {image.motivation}
           </p>
             <p>
             {" "}
-            <span className='text-violet-500 text-lg'> Time Required:</span> {image.timeRequired}
+            <span className='text-lg font-bold'> Time Required:</span> {image.timeRequired}
           </p>
           <p>
             {" "}
-            <span className='text-fuchsia-500 text-lg'> For Age:</span> {image.forAge}
+            <span className=' text-lg font-bold' > For Age:</span> {image.forAge}
           </p>
          
            

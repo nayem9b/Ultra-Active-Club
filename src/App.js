@@ -62,7 +62,7 @@ function App(props) {
             ))}
           </div>
         </div>
-        <div className='mt-8'>
+        <div className='mt-8' >
           <MyInfo setCount={setCount} count={count}></MyInfo>
           <AddBreak
             setCount={setCount}

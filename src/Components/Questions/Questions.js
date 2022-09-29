@@ -1,6 +1,18 @@
 import React from 'react';
-
+import Swal from "sweetalert2";
+import './Questions.css'
 const Questions = () => {
+
+  const handleSuccess = () => {
+    Swal.fire({
+  title: 'Meaowwww!',
+  text: 'Give me some food.',
+  imageUrl: 'https://images.unsplash.com/photo-1571566882372-1598d88abd90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80 ',
+  imageWidth: 400,
+  imageHeight: 450,
+  imageAlt: 'Custom image',
+})
+  };
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
@@ -15,7 +27,7 @@ The render method returns a description of what you want to see on the screen. R
 The ShoppingList component above only renders built-in DOM components like <div /> and <li />. But you can compose and render custom React components too. For example, we can now refer to the whole shopping list by writing ShoppingList . Each React component is encapsulated and can operate independently; this allows you to build complex UIs from simple components.
 
 </p>
-      <button className="btn btn-primary">Get Started</button>
+      <button className="btn btn-primary" onClick={handleSuccess} >Meow</button>
     </div>
   </div>
 </div>
@@ -27,7 +39,7 @@ The ShoppingList component above only renders built-in DOM components like <div 
       {/* <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p> */}
       <div className="overflow-x-auto">
 </div>
-      <button className="btn btn-primary">Get Started</button>
+      <button className="btn btn-primary" onClick={handleSuccess} >Meow</button>
     </div>
   </div>
 </div>
@@ -44,7 +56,7 @@ The ShoppingList component above only renders built-in DOM components like <div 
        State:
       </h1>
       <p className="py-6 text-justify"> The state represents parts of an Application that can change. Each component can have its State. The state is Mutable and It is local to the component only.The Data is passed within the component only using state.It is Mutable ( can be modified).State can be used only with the state components/class component.State is both read and write.</p>
-      <button className="btn btn-primary">Get Started</button>
+      <button className="btn btn-primary" onClick={handleSuccess}>Meow</button>
     </div>
   </div>
 </div>
